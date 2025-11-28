@@ -4,7 +4,7 @@ import { CheckCircle, XCircle, RotateCcw, Database, TrendingUp, Loader, Eye } fr
 
 const ExamQuizApp = () => {
   // API Base URL
-  const API_BASE_URL = 'http://localhost:5001/api';
+  const API_BASE_URL = 'http://localhost:5000/api';
 
   // State management
   const [testBanks, setTestBanks] = useState([]);
@@ -88,7 +88,7 @@ const ExamQuizApp = () => {
       setTestBanks(banks);
     } catch (err) {
       console.error('Error fetching test banks:', err);
-      setError('Failed to connect to database. Make sure the API server is running on port 5001.');
+      setError('Failed to connect to database. Make sure the API server is running on port 5000.');
     } finally {
       setLoading(false);
     }
