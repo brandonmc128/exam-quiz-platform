@@ -450,4 +450,4 @@ if __name__ == '__main__':
     print("Make sure to update DB_CONFIG with your database credentials!")
     print("Initializing user_stats table...")
     init_user_stats_table()
-    app.run(debug=True, host='0.0.0.0', port=5001)
+    app.run(debug=True, host='0.0.0.0', port=5000)
